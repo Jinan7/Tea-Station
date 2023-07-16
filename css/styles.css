@@ -10,7 +10,7 @@
     --ff-primary: 'Catamaran', sans-serif;
     --ff-secondary: 'Grand Hotel', cursive;
     --transition: all 0.3s linear;
-    --spacing: 0.25rem;
+    --spacing: 0.1rem;
     --radius: 0.5rem;
 }
 
@@ -40,19 +40,20 @@ h1, h2, h3, h4 {
     text-transform: capitalize;
     margin-bottom: 0.75rem;
     letter-spacing: var(--spacing);
+
 }
 p{
     margin-bottom: 1.25rem;
 }
 
 h1{
-    font-size: 3rem;
-}
-h2{
     font-size: 2rem;
 }
-h3{
+h2{
     font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
 }
 h4{
     font-size: 0.875rem;
@@ -199,4 +200,59 @@ h4{
 
 .section-title h3{
     color: var(--clr-primary);
+}
+
+.products article{
+    padding: 1rem 0;
+}
+
+.product-text{
+    max-width: 25rem;
+    color: var(--clr-grey-5);
+}
+
+.product-img{
+    height: 17rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.product{
+    margin-bottom:2rem;
+}
+
+.product-price{
+    color: var(--clr-primary);
+}
+
+
+
+@media screen and (min-width: 768px){
+    .product{
+        float: left;
+        width: 50%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .product{
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .product-info{
+        float: left;
+        width: 30%;
+    }
+
+    .product-inventory{
+        float:left;
+        width: 70%;
+    }
+    .product{
+        margin-bottom: 0;
+    }
 }
