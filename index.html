@@ -11,6 +11,18 @@
   </head>
   <body>
     <!--header-->
+    <span class="nav-btn" id="nav-btn"><i class="fa-solid fa-bars"></i></span>
+    <nav class="nav-bar" id="navbar">
+      <div class="nav-header">
+        <span class="nav-close" id="nav-close"><i class="fa-solid fa-circle-xmark"></i></span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">home</a></li>
+        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="about.html" class="nav-link">about</a></li>
+        <li><a href="products.html" class="nav-link">products</a></li>
+      </ul>
+    </nav>
     <header class="header">
       <div class="banner">
         <h2>over one hundred flavours of</h2>
@@ -179,7 +191,7 @@
         </article>
         <article class="contact-form">
           <h3>contact us</h3>
-          <form class="form-group">
+          <form action="https://formspree.io/f/mbjvlorq" method="post" class="form-group">
             <input type="text" class="form-control" placeholder="name" name="name">
             <input type="text" class="form-control" placeholder="email" name="email">
             <textarea name="message" class="form-control" placeholder="message" rows="10"></textarea>
