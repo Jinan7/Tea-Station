@@ -256,3 +256,144 @@ h4{
         margin-bottom: 0;
     }
 }
+
+.services{
+    background: var(--clr-white);
+}
+.service-title{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.service-card{
+    background: var(--clr-grey-10);
+    margin-bottom: 2rem;
+}
+
+.service-picture{
+    height: 17rem;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.service-info{
+    text-align:center;
+    padding: 2rem;
+    color: var(--clr-grey-1);
+}
+
+@media screen and (min-width: 768px){
+    .service-card{
+        float:left;
+        width:45%;
+        margin-right:5%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .service-card{
+        width:30%;
+        margin-right:3.33%;
+        
+    }
+}
+
+.service-image-container{
+    position: relative;
+}
+
+.service-icon{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background: var(--clr-primary-light);
+    color: var(--clr-primary);
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    border: 0.25rem solid var(--clr-grey-10);
+    
+}
+
+.contact-info, .contact-form{
+    margin: 1rem 0;
+}
+
+.contact-title{
+    color: var(--clr-primary);
+    font-weight: 400;
+}
+.contact-text {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background: var(--clr-white);
+    text-align: center;
+    border-radius: var(--radius);
+    max-width: 35rem;
+}
+
+.form-group{
+    padding: 1rem;
+}
+
+.form-control{
+    display: block;
+    width:100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background: var(--clr-grey-10);
+    border-radius: var(--radius);
+    letter-spacing: var(--spacing);
+}
+
+.form-control::placeholder{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: uppercase;
+    
+}
+
+.submit-btn{
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+@media screen and (min-width: 992px){
+    .contact-info, .contact-form{
+        float: left;
+        width: 50%;
+    }
+}
+
+.footer{
+    background: black;
+    color: var(--clr-white);
+    text-align: center;
+}
+
+.social-icon{
+    color:var(--clr-white);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.social-icon:hover{
+    color: var(--clr-primary);
+}
+
+.footer-text{
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    font-weight: 400;
+}
+
+.company{
+    color:var(--clr-primary);
+}
